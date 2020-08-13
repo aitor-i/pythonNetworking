@@ -16,15 +16,6 @@ def portScaner(port):
         return False
 
 
-# for i in range(1, 1022):
-#     result = portScaner(i)
-#     if result == True:
-#         print("Port {} is open".format(i))
-
-#     else:
-#         print("port {} is close".format(i))
-
-
 def fillQueue(portList):
     for port in portList:
         queue.put(port)
